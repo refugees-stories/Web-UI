@@ -1,13 +1,29 @@
 
 .top-bar {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
 	height: 50px;
 	width: 1024px;
-    background-color: rgba(19,41,83,0.75);
+    background-color: @nav-background;
+    opacity: 75%;
+    position: fixed;
+    top: 0;
+    .top-left{
+        display: flex;
+        h1 {
+            color: white;
+        }
+    }
+
     .navigation {
+        display: flex;
+        align-items: center;
         a {
             text-decoration: none;
-            color: grey;
+            color: white;
+            font-size: 1rem;
+            Padding: 0px 10px;
         }
     }
 }

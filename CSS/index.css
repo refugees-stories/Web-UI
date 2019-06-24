@@ -1,7 +1,9 @@
-@import './variables';
-@import './mixins';
-
-
-/* Import google font if needed */
-
-/* Add imports for any components made in ./components */
+.top-bar {
+  height: 50px;
+  width: 1024px;
+  background-color: rgba(19, 41, 83, 0.75);
+}
+.top-bar .navigation a {
+  text-decoration: none;
+  color: grey;
+}

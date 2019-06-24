@@ -32,6 +32,10 @@
   Padding: 0px 10px;
   border-left: 1px solid grey;
 }
+.carousel img {
+  width: 1024px;
+  height: auto;
+}
 footer {
   height: 98px;
   width: 1025px;

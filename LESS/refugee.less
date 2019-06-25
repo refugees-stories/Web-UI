@@ -1,48 +1,23 @@
-@import "variables.less";
-@import "mixins.less";
-@import "refugee.less";
-@import "./../components/topbar/topbar.less";
-@import "./../components/carousel/carousel.less";
-@import "./../components/footer/footer.less";
 
-
-// Import fonts, components,  and any other .less files here
-
-// Start of CSS Reset
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'PT Sans', sans-serif;
-    
-    h1 {
-        font-size: 2rem;
-        margin: 0px;
-    }
-
-    .home-stories {
+    .refugee-stories-main {
         width: 1024px;
         height: auto;
         background-color: #f6f6f7;
+
+        .filter-stories {
+            margin-left: 46px;
+            margin-bottom: -3px;
+            margin-top: 30px;
+            color: red;
+            font-size: 18px;
+        }
 
         .recent-title {
             margin-left: 40px;
             margin-top: 30px;
         }
 
-        .recent-stories {
+        .stories {
             padding: 40px;
 
             .single-story {
@@ -72,4 +47,3 @@ body {
         }
 
     }
-}

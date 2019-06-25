@@ -10,6 +10,13 @@
     div {
         padding: 0px 30px;
     }
+    h2 {
+        color: @content-title-font;
+    }
+    
+    h3 {
+        color: @dark-orange;
+    }    
     p {
         color: @content-font;
         font-size: 0.8rem;
@@ -29,27 +36,39 @@
             height: 112px;
             width: 112px;
             border: 1px solid grey;
-            // margin-right: 20px;
             border-radius: 8px;
             padding: 0px;
         }
         .donate-btn {
-            border: 1px solid red;
+            border: 1px solid @dark-orange;
             border-radius: 4px;
             background-color: white;
-            padding: 8px 20px;
-            color: red;
+            padding: 8px 0px;
+            width: 112px;
+            color: @dark-orange;
             font-size: 0.8rem;
             margin: 10px;
         }
     }
 }
 
-h2 {
-    color: @content-title-font;
+.volunteer-section {
+    background-image: url("/Assets/Images/Contribute/Rectangle.png");
+    background-size: cover;
+    width: 1024px;
+    height: 633px;
+    padding: 0px;
+    margin: 0px;
+    p {
+        margin: 0px;
+    }
+}
+.opacity-box {
+    background-color: @footer-background;
+    opacity: 0.5;
+    height: 100%;
 }
 
-h3 {
-    color: @dark-orange;
-}
+
+
 

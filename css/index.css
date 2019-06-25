@@ -50,6 +50,12 @@
 .donate-section div {
   padding: 0px 30px;
 }
+.donate-section h2 {
+  color: #132953;
+}
+.donate-section h3 {
+  color: #D14704;
+}
 .donate-section p {
   color: #204488;
   font-size: 0.8rem;
@@ -74,19 +80,30 @@
   padding: 0px;
 }
 .donate-section .donation-boxes .donate-btn {
-  border: 1px solid red;
+  border: 1px solid #D14704;
   border-radius: 4px;
   background-color: white;
-  padding: 8px 20px;
-  color: red;
+  padding: 8px 0px;
+  width: 112px;
+  color: #D14704;
   font-size: 0.8rem;
   margin: 10px;
 }
-h2 {
-  color: #132953;
+.volunteer-section {
+  background-image: url("/Assets/Images/Contribute/Rectangle.png");
+  background-size: cover;
+  width: 1024px;
+  height: 633px;
+  padding: 0px;
+  margin: 0px;
 }
-h3 {
-  color: #D14704;
+.volunteer-section p {
+  margin: 0px;
+}
+.opacity-box {
+  background-color: #132953;
+  opacity: 0.5;
+  height: 100%;
 }
 .top-bar {
   display: flex;
@@ -131,13 +148,13 @@ h3 {
 }
 footer {
   height: 98px;
-  width: 1025px;
+  width: 1024px;
   background-color: #132953;
   color: white;
 }
 footer p {
   font-size: 0.75rem;
-  padding: 12px 30px;
+  padding: 5px 30px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

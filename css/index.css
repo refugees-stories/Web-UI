@@ -38,6 +38,13 @@
   color: red;
   font-size: 1.1rem;
 }
+.about-main {
+  width: 1024px;
+}
+.about-main .about-students {
+  background-color: lightgrey;
+  color: #132953;
+}
 .top-bar {
   display: flex;
   justify-content: space-between;

@@ -57,13 +57,30 @@
 .donate-section .donation-boxes {
   display: flex;
   padding-bottom: 20px;
+  justify-content: flex-start;
+}
+.donate-section .donation-boxes .box-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px 0px 0px;
 }
 .donate-section .donation-boxes .box {
   background-color: #D8D8D8;
   height: 112px;
   width: 112px;
-  margin-right: 20px;
-  border-radius: 15px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 0px;
+}
+.donate-section .donation-boxes .donate-btn {
+  border: 1px solid red;
+  border-radius: 4px;
+  background-color: white;
+  padding: 8px 20px;
+  color: red;
+  font-size: 0.8rem;
+  margin: 10px;
 }
 h2 {
   color: #132953;

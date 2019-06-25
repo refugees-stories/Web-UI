@@ -1,3 +1,8 @@
+
+
+
+/* Import google font if needed */
+/* Add imports for any components made in ./components */
 .top-bar {
   display: flex;
   justify-content: space-between;

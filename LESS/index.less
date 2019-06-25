@@ -1,6 +1,7 @@
 @import "variables.less";
 @import "mixins.less";
 @import "refugee.less";
+@import "submit.less";
 @import "about.less";
 @import "../Components/TopBar/TopBar.less";
 @import "../Components/Carousel/Carousel.less";
@@ -27,8 +28,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'PT Sans', sans-serif;
-    
+    font-family: @font-family;
+
     h1 {
         font-size: 2rem;
         margin: 0px;
@@ -42,10 +43,13 @@ body {
         .recent-title {
             margin-left: 40px;
             margin-top: 30px;
+            font-size: 1.8rem;
+            color: @content-font;
         }
 
         .recent-stories {
             padding: 40px;
+            margin-top: -55px;
 
             .single-story {
                 display: flex;
@@ -53,13 +57,21 @@ body {
 
                 .title-story {
                     margin-left: 30px;
-                    line-height: 27px
+                    line-height: 27px;
+
+                    .ver-line {
+                        font-size: 2rem;
+                        color: #b4c1da;
+                        vertical-align: middle;
+                        padding: 3px;
+                    }
                 }
 
                 .title {
                     margin-top: 0px;
                     color: @content-title-font;
                     font-size: @story-title-font-size;
+                    font-weight: normal;
                 }
 
                 .home-rm-btn {
@@ -69,6 +81,14 @@ body {
                     padding: 10px;
                     color: red;
                     font-size: 1.1rem;
+
+
+                    &:hover {
+                        background-color: #D14704;
+                        color: white;
+                        cursor: pointer;
+
+                    }
                 }
             }
         }

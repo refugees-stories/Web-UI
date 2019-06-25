@@ -1,49 +1,56 @@
+.refugee-stories-main {
+    width: 1024px;
+    height: auto;
+    background-color: #f6f6f7;
 
-    .refugee-stories-main {
-        width: 1024px;
-        height: auto;
-        background-color: #f6f6f7;
+    .filter-stories {
+        margin-left: 46px;
+        margin-bottom: -3px;
+        margin-top: 30px;
+        color: red;
+        font-size: 18px;
+    }
 
-        .filter-stories {
-            margin-left: 46px;
-            margin-bottom: -3px;
-            margin-top: 30px;
-            color: red;
-            font-size: 18px;
-        }
+    .recent-title {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
 
-        .recent-title {
-            margin-left: 40px;
-            margin-top: 30px;
-        }
+    .stories {
+        padding: 40px;
 
-        .stories {
-            padding: 40px;
+        .single-story {
+            display: flex;
+            margin-bottom: 35px;
 
-            .single-story {
-                display: flex;
-                margin-bottom: 35px;
+            .title-story {
+                margin-left: 30px;
+                line-height: 27px
+            }
 
-                .title-story {
-                    margin-left: 30px;
-                    line-height: 27px
-                }
+            .title {
+                margin-top: 0px;
+                color: @content-title-font;
+                font-size: @story-title-font-size;
+            }
 
-                .title {
-                    margin-top: 0px;
-                    color: @content-title-font;
-                    font-size: @story-title-font-size;
-                }
+            .home-rm-btn {
+                border: 1px solid red;
+                border-radius: 4px;
+                background-color: white;
+                padding: 10px;
+                color: red;
+                font-size: 1.1rem;
 
-                .home-rm-btn {
-                    border: 1px solid red;
-                    border-radius: 4px;
-                    background-color: white;
-                    padding: 10px;
-                    color: red;
-                    font-size: 1.1rem;
+
+                &:hover {
+                    background-color: #D14704;
+                    color: white;
+                    cursor: pointer;
+
                 }
             }
         }
-
     }
+
+}

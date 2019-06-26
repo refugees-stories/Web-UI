@@ -40,9 +40,9 @@ class Carousel {
         //currentindex + 1 when clicking next arrow
         this.currentIndex += 1;
         if (this.currentIndex < 0) {
-            this.currentIndex = 3;
+            this.currentIndex = 6;
         }
-        if (this.currentIndex > 3) {
+        if (this.currentIndex > 6) {
             this.currentIndex = 0;
         }
         this.imgs[this.currentIndex].style.display = 'block';

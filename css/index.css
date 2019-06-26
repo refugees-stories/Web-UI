@@ -38,12 +38,50 @@
   color: red;
   font-size: 1.1rem;
 }
-.about-main {
-  width: 1024px;
+.container .carousel {
+  position: relative;
+  text-align: center;
+  color: white;
 }
-.about-main .about-students {
+.container .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.container .about-main {
+  width: 1024px;
+  height: auto;
+}
+.container .about-main .about-students {
   background-color: lightgrey;
   color: #132953;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .about-main .about-students > img {
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.container .about-main .about-content {
+  position: relative;
+  color: white;
+}
+.container .about-main .about-content .about-content-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+h3,
+h2,
+p {
+  font-family: 'Roboto', sans-serif;
 }
 .top-bar {
   display: flex;

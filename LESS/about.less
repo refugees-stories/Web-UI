@@ -17,11 +17,22 @@
     .about-students{
     background-color: lightgrey;
     color:@content-title-font;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+justify-content: space-around;
     }
-    .about-students > img {
+    .about-students .student{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 150px;
+      height: 300px;
+      
+    }
+    .about-students .student a >img{
+      
         border-radius: 15px;
         background-color: #f1f1f1;
         width: 150px;
@@ -36,21 +47,49 @@
       position: relative;
       color:white;
       height:608px;
+    
+  
         .about-content-text{
         position: absolute;
         top: 8px;
-        left: 16px;
+        margin-left: 51px;
+        margin-right: 51px;
           p{
-          font-size: 15px;
+          font-size: 14px;
+          margin-bottom: 15px;
+
         }
+        h4{
+          margin-bottom: 0px;
+        }
+        .half{
+          width: 45%;
+        }
+
 }
+    }
+    .image-holder {
+      height: 608px;
+      width: auto;
+      position:relative; 
+    }    
+    .image-holder:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(19,41,83,0.5);
+      transition: all .3s linear;
     }
 }
 
 footer p{
   margin-top:0px;
 }
-h3,h2, p{
+h4,h3,h2,p{
   font-family: 'Roboto', sans-serif;
 }
 
@@ -69,4 +108,29 @@ border-radius: 15px;
 }
 .container2{
   background-color: lightgray;
+  padding-bottom: 0px;
+}
+.box{
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;  
+  h2{
+    width: 200px;
+    height: 40px;
+    margin: 0px;
+  }
+  p{
+    width: 50%;
+    height:80px;
+    margin: 0px;
+
+  }
+}
+.box > img{
+
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  padding-right: 8%;
 }

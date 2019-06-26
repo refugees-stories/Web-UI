@@ -59,7 +59,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.about-main .about-students > img {
+.about-main .about-students .student {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 150px;
+  height: 300px;
+}
+.about-main .about-students .student a > img {
   border-radius: 15px;
   background-color: #f1f1f1;
   width: 150px;
@@ -77,14 +85,39 @@
 .about-main .about-content .about-content-text {
   position: absolute;
   top: 8px;
-  left: 16px;
+  margin-left: 51px;
+  margin-right: 51px;
 }
 .about-main .about-content .about-content-text p {
-  font-size: 15px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.about-main .about-content .about-content-text h4 {
+  margin-bottom: 0px;
+}
+.about-main .about-content .about-content-text .half {
+  width: 45%;
+}
+.about-main .image-holder {
+  height: 608px;
+  width: auto;
+  position: relative;
+}
+.about-main .image-holder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(19, 41, 83, 0.5);
+  transition: all 0.3s linear;
 }
 footer p {
   margin-top: 0px;
 }
+h4,
 h3,
 h2,
 p {
@@ -103,6 +136,29 @@ p {
 }
 .container2 {
   background-color: lightgray;
+  padding-bottom: 0px;
+}
+.box {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.box h2 {
+  width: 200px;
+  height: 40px;
+  margin: 0px;
+}
+.box p {
+  width: 50%;
+  height: 80px;
+  margin: 0px;
+}
+.box > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  padding-right: 8%;
 }
 .top-bar {
   display: flex;

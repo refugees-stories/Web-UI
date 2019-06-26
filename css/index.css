@@ -38,7 +38,6 @@
   color: red;
   font-size: 1.1rem;
 }
-
 .refugee-stories-main .stories .single-story .home-rm-btn:hover {
   background-color: #D14704;
   color: white;
@@ -98,14 +97,13 @@
     margin-bottom: 20px;
     max-width: 100%;
   }
-
+}
 .about-main {
   width: 1024px;
 }
 .about-main .about-students {
   background-color: lightgrey;
   color: #132953;
-
 }
 .top-bar {
   display: flex;

@@ -280,6 +280,46 @@
 .carousel .buttons .right-button {
   border-radius: 7px 0px 0px 7px;
 }
+.carousel .img-text {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(19, 41, 83, 0.8));
+  width: 984px;
+  height: 180px;
+  position: absolute;
+  top: 380px;
+  padding: 20px;
+}
+.carousel .img-text h2 {
+  font: inherit;
+  font-size: 1.65rem;
+  margin: 0;
+  color: white;
+}
+.carousel .img-text p {
+  font: inherit;
+  font-size: 0.9rem;
+  color: white;
+  margin: 10px 0px;
+}
+.carousel .img-text .img-readmore-btn {
+  border: 1px solid #D14704;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.9rem;
+  color: #D14704;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 0;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+}
+.carousel .img-text .img-readmore-btn:hover {
+  background-color: #D14704;
+  color: white;
+  cursor: pointer;
+}
 footer {
   height: 98px;
   width: 1024px;

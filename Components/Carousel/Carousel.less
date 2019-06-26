@@ -42,4 +42,43 @@
             border-radius: 7px 0px 0px 7px;
           }
     }
+    .img-text {
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(19,41,83,0.8));
+        width: 984px;
+        height: 180px;
+        // border: 1px solid red;
+        position: absolute;
+        top: 380px;
+        padding: 20px;
+        h2 {
+            font: inherit;
+            font-size: 1.65rem;
+            margin: 0;
+            color: white;
+        }
+        p {
+            font: inherit;
+            font-size: 0.9rem;
+            color: white;
+            margin: 10px 0px;
+        }
+        .img-readmore-btn {
+            border: 1px solid @dark-orange;
+            border-radius: 4px;
+            font: inherit;
+            font-size: 0.9rem;
+            color: @dark-orange;
+            background-color: white;
+            padding: 10px 10px;
+            margin: 0;
+            width: 110px;
+            .flex(center);
+            &:hover {
+                background-color: #D14704;
+                color: white;
+                cursor: pointer;
+
+            }
+        }
+    }
 }

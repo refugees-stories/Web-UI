@@ -1,3 +1,9 @@
+.width-100 {
+  width: 100%;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid grey;
+}
 .refugee-stories-main {
   width: 1024px;
   height: auto;
@@ -373,6 +379,88 @@ p {
 .carousel img {
   width: 100%;
   height: auto;
+}
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  width: 1024px;
+  top: 0;
+  overflow: hidden;
+}
+.carousel .buttons {
+  display: flex;
+  width: 1024px;
+  height: 54px;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+}
+.carousel .buttons .left-button,
+.carousel .buttons .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  padding-bottom: 4px;
+  color: white;
+  background-color: rgba(19, 41, 83, 0.75);
+  opacity: 0.5;
+  font-size: 40px;
+  position: relative;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .buttons .left-button:hover,
+.carousel .buttons .right-button:hover {
+  color: grey;
+  border: 2px solid grey;
+}
+.carousel .buttons .left-button {
+  border-radius: 0px 7px 7px 0px;
+}
+.carousel .buttons .right-button {
+  border-radius: 7px 0px 0px 7px;
+}
+.carousel .img-text {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(19, 41, 83, 0.8));
+  width: 984px;
+  height: 180px;
+  position: absolute;
+  top: 380px;
+  padding: 20px;
+}
+.carousel .img-text h2 {
+  font: inherit;
+  font-size: 1.65rem;
+  margin: 0;
+  color: white;
+}
+.carousel .img-text p {
+  font: inherit;
+  font-size: 0.9rem;
+  color: white;
+  margin: 10px 0px;
+}
+.carousel .img-text .img-readmore-btn {
+  border: 1px solid #D14704;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.9rem;
+  color: #D14704;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 0;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+}
+.carousel .img-text .img-readmore-btn:hover {
+  background-color: #D14704;
+  color: white;
+  cursor: pointer;
 }
 footer {
   height: 98px;

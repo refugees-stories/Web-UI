@@ -4,9 +4,9 @@
 @import "contribute.less";
 @import "submit.less";
 @import "about.less";
-@import "../Components/topbar/topbar.less";
-@import "../Components/carousel/carousel.less";
-@import "../Components/footer/footer.less";
+@import "../Components/TopBar/TopBar.less";
+@import "../Components/Carousel/Carousel.less";
+@import "../Components/Footer/Footer.less";
 
 
 // Import fonts, components,  and any other .less files here
@@ -16,6 +16,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 
 
 html,
@@ -65,6 +66,12 @@ body {
                         vertical-align: middle;
                         padding: 3px;
                     }
+
+                    @media @mobile {
+                        margin-left: 0px;
+                        line-height: 23px;
+                        margin-top: 20px;
+                    }
                 }
 
                 .title {
@@ -72,6 +79,12 @@ body {
                     color: @content-title-font;
                     font-size: @story-title-font-size;
                     font-weight: normal;
+
+                    @media @mobile {
+                        margin-top: 0px;
+                        color: #132953;
+                        margin-right: -8px;
+                    }
                 }
 
                 .home-rm-btn {
@@ -89,9 +102,38 @@ body {
                         cursor: pointer;
 
                     }
+
+                    @media @mobile {
+                        font-size: 1rem;
+                        width: 100%;
+                    }
+                }
+
+                @media @mobile {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                }
+
+                .home-img {
+                    @media @mobile {
+                        height: 238px;
+
+                    }
                 }
             }
         }
+
+        @media @mobile {
+            width: 100%;
+        }
+
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
 
     }
 }

@@ -1,3 +1,5 @@
+@import "variables";
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -26,6 +28,12 @@
             color: white;
             font-size: 1.5rem;
         }
+
+        @media @mobile {
+            align-items: center;
+            display: flex;
+            margin-left: 74px;
+        }
     }
 
     .navigation {
@@ -40,6 +48,22 @@
             border-left: 1px solid grey;
             //vertical-align: baseline;
             vertical-align: baseline;
+
+            @media @mobile {
+
+                padding-bottom: 7px;
+                Padding: 8px 0px;
+                border-bottom: 2px solid grey;
+                text-align: center;
+                width: 100%;
+            }
+
+        }
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+
         }
 
     }
@@ -47,5 +71,11 @@
     @media @mobile {
         display: flex;
         flex-direction: column;
+        height: auto;
+        width: 100%;
+        opacity: 100%;
+        position: relative;
+
     }
+
 }

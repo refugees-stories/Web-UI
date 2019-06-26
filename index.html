@@ -5,6 +5,7 @@
   <title>Refugee Stories</title>
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald" media="screen">
+  <script src="./components/Carousel/Carousel.js" async></script>
 </head>
 
 <body>
@@ -23,9 +24,16 @@
     </nav>
   </div>
   <!-- Image Carousel with Featured Story Snippets, Read More links -->
+
   <div class="carousel">
-    <img src="Assets/Images/Desktop Landing Page Carousel/Hero Image.png" />
+    <div class="left-button"><</div>
+    <img class="image" src="./Assets/Images/Carousel/Image01.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image02.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image03.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image04.jpg" />
+    <div class="right-button">></div>
   </div>
+
   <!-- Recent Stories section -->
   <section class="home-stories">
 

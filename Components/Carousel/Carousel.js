@@ -22,27 +22,26 @@ class Carousel {
         this.currentIndex -= 1;
         //if the current index is less than 0 then loop to end
         if (this.currentIndex < 0) {
-            this.currentIndex = 3;
+            this.currentIndex = 2;
         }
         //if the current index is greater than 3 then loop to beginning (since theres only 4 images total)
         //could use imgs.length etc.
-        if (this.currentIndex > 3) {
+        if (this.currentIndex > 2) {
             this.currentIndex = 0;
         }
         //displays block on the current image on the current index
         this.imgs[this.currentIndex].style.display = 'block';
     }
     next() {
-        // alert('click');
         const imgs = document.querySelectorAll('.carousel img');
         //display none for each image
         imgs.forEach(image => image.style.display = 'none');
         //currentindex + 1 when clicking next arrow
         this.currentIndex += 1;
         if (this.currentIndex < 0) {
-            this.currentIndex = 6;
+            this.currentIndex = 2;
         }
-        if (this.currentIndex > 6) {
+        if (this.currentIndex > 2) {
             this.currentIndex = 0;
         }
         this.imgs[this.currentIndex].style.display = 'block';

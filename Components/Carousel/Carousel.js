@@ -17,6 +17,7 @@ class Carousel {
     previous() {
         const imgs = document.querySelectorAll('.carousel img');
         const snippets = document.querySelectorAll('.snippet');
+        const circles = document.querySelectorAll('.circle');
         //display none on each image
         imgs.forEach(image => image.style.display = 'none');
         snippets.forEach(snip => snip.style.display = 'none');

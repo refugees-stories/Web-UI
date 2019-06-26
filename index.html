@@ -6,6 +6,7 @@
   <title>Refugee Stories</title>
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald" media="screen">
+  <script src="./components/Carousel/Carousel.js" async></script>
 </head>
 
 <body>
@@ -24,9 +25,44 @@
     </nav>
   </div>
   <!-- Image Carousel with Featured Story Snippets, Read More links -->
+
   <div class="carousel">
-    <img src="Assets/Images/Desktop Landing Page Carousel/Hero Image.png" />
+    <img class="image" src="./Assets/Images/Carousel/Image00.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image07.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image08.jpg" />
+    <!-- <img class="image" style="display: none" src="./Assets/Images/Carousel/Image07.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image10.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image05.jpg" />
+    <img class="image" style="display: none" src="./Assets/Images/Carousel/Image08.jpg" /> -->
+    <div class="img-text">
+      <div class="snippet">
+        <h2 class="img-text-headline">South Sudanese Grow Rice, and Community Ties, in Uganda</h2>
+        <p class="img-text-p">"Rice is a food crop and a cash crop," explains Minoru Yoshino, chief advisor of the PRiDe project, which has trained more than 50,000 farmers since it launched in 2011. "[Growing it] improves both food security and livelihoods for refugees and Ugandans."</p>
+        <div class="img-readmore-btn">Read More</div>
+      </div>
+
+      <div class="snippet" style="display: none">
+        <h2 class="img-text-headline">Kalobeyei Settlement, Kenya</h2>
+        <p class="img-text-p">A woman from the Turkana host community (left) and her friend, a refugee from South Sudan, stand among the crops in the 180-hectare sorghum farm at Kalobeyei Integrated Settlement.</p>
+        <div class="img-readmore-btn">Read More</div>
+      </div>
+
+    <div class="snippet" style="display: none">
+        <h2 class="img-text-headline">Syrian refugee teaches Arabic via Skype from Beirut</h2>
+        <p class="img-text-p">Shadi El Aiek looks over the rooftops of Beirut from his balcony in the Geitawi district. He is one of a growing number of displaced people tutoring language students in Arabic through the NaTakallam website.</p>
+        <div class="img-readmore-btn">Read More</div>
+    </div>
+    </div>
+<!-- This section will be to show which slide is active with highlighted circles/dots -->
+    <!-- <div class="circles">
+      <div class="active"></div>
+    </div> -->
+    <div class="buttons">
+      <div class="left-button">&#10092</div>
+      <div class="right-button">&#10093</div>
+    </div>
   </div>
+
   <!-- Recent Stories section -->
   <section class="home-stories">
 

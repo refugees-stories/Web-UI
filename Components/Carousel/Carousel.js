@@ -16,8 +16,10 @@ class Carousel {
     }
     previous() {
         const imgs = document.querySelectorAll('.carousel img');
+        const snippets = document.querySelectorAll('.snippet');
         //display none on each image
         imgs.forEach(image => image.style.display = 'none');
+        snippets.forEach(snip => snip.style.display = 'none');
         //currentIndex minus 1 when clicking left arrow
         this.currentIndex -= 1;
         //if the current index is less than 0 then loop to end
@@ -31,11 +33,14 @@ class Carousel {
         }
         //displays block on the current image on the current index
         this.imgs[this.currentIndex].style.display = 'block';
+        snippets[this.currentIndex].style.display = 'block';
     }
     next() {
         const imgs = document.querySelectorAll('.carousel img');
+        const snippets = document.querySelectorAll('.snippet');
         //display none for each image
         imgs.forEach(image => image.style.display = 'none');
+        snippets.forEach(snip => snip.style.display = 'none');
         //currentindex + 1 when clicking next arrow
         this.currentIndex += 1;
         if (this.currentIndex < 0) {
@@ -45,6 +50,7 @@ class Carousel {
             this.currentIndex = 0;
         }
         this.imgs[this.currentIndex].style.display = 'block';
+        snippets[this.currentIndex].style.display = 'block';
     }
 }
 

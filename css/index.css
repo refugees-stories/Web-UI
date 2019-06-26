@@ -38,28 +38,28 @@
   color: red;
   font-size: 1.1rem;
 }
-.container .carousel {
-  position: relative;
+.carousel {
   text-align: center;
   color: white;
+  height: 420px;
 }
-.container .bottom-left {
+.bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px;
 }
-.container .about-main {
+.about-main {
   width: 1024px;
   height: auto;
 }
-.container .about-main .about-students {
+.about-main .about-students {
   background-color: lightgrey;
   color: #132953;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.container .about-main .about-students > img {
+.about-main .about-students > img {
   border-radius: 15px;
   background-color: #f1f1f1;
   width: 150px;
@@ -69,14 +69,21 @@
   line-height: 75px;
   font-size: 30px;
 }
-.container .about-main .about-content {
+.about-main .about-content {
   position: relative;
   color: white;
+  height: 608px;
 }
-.container .about-main .about-content .about-content-text {
+.about-main .about-content .about-content-text {
   position: absolute;
   top: 8px;
   left: 16px;
+}
+.about-main .about-content .about-content-text p {
+  font-size: 15px;
+}
+footer p {
+  margin-top: 0px;
 }
 h3,
 h2,

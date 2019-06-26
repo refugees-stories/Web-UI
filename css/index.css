@@ -90,6 +90,20 @@ h2,
 p {
   font-family: 'Roboto', sans-serif;
 }
+/* ABOUS US INDIVIDIDUAL PAGES*/
+.about-main-indiv {
+  background-color: lightgray;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.about-main-indiv > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+.container2 {
+  background-color: lightgray;
+}
 .top-bar {
   display: flex;
   justify-content: space-between;

@@ -23,23 +23,21 @@
         input[type=text],
         input[type=password] {
             width: 100%;
-            padding: 15px;
+            padding: 10px;
             margin: 5px 0 22px 0;
             border: none;
-            background: #f1f1f1;
+            background: #ffffff;
+            border: 1px solid black;
+            border-radius: 5px;
         }
 
-        input[type=text]:focus,
-        input[type=password]:focus {
-            background-color: #ddd;
-            outline: none;
-        }
+
 
         .btn {
             background-color: #ffffff;
             color: red;
             font-size: 1.2rem;
-            padding: 16px 20px;
+            padding: 9px 20px;
             cursor: pointer;
             width: 100%;
             border-radius: 4px;
@@ -52,12 +50,174 @@
             color: white;
             cursor: pointer;
         }
+
+        @media @mobile {
+
+            right: 0;
+            margin: 10px;
+            /* margin: 91px; */
+            margin-top: 148px;
+            max-width: 500px;
+            padding: 23px;
+            padding-bottom: -50px;
+            background-color: white;
+            border-radius: 6px;
+
+        }
+
     }
 
     @media @mobile {
-        margin-bottom: 20px;
+
         max-width: 100%;
- 
+
     }
 
+}
+
+
+// SIGN UP FORM
+
+.modal {
+    right: 0;
+    margin-left: 67px;
+    /* margin: 91px; */
+    margin-top: 148px;
+    max-width: 500px;
+    padding: 23px;
+    background-color: white;
+    border-radius: 6px;
+
+
+    .field {
+        margin-bottom: 12px;
+
+        .field__label {
+            display: block;
+            font-size: 1.0625rem
+        }
+
+        .field__input {
+            width: 100%;
+            padding: 8px;
+            border: 0;
+            border: 1px solid #000000;
+            font-size: 18px;
+            border-radius: 7px;
+        }
+    }
+
+    .field--toggle {
+        position: relative;
+    }
+
+    .field--toggle .field__input {
+        padding-right: 80px;
+    }
+
+
+    .field__input:valid {
+        border-bottom-color: #7ade9b;
+    }
+
+    .button {
+        background-color: #ffffff;
+        color: red;
+        font-size: 1.2rem;
+        padding: 9px 20px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid red
+    }
+
+    .button:hover {
+        opacity: 1;
+        background-color: #D14704;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .button:active {
+        background: #e59622;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .select-css {
+        font-size: 16px;
+        font-family: sans-serif;
+        color: #444;
+        line-height: 1.3;
+        padding: .6em 1.4em .5em .8em;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #aaa;
+        border-radius: .5em;
+        background-color: #fff;
+    }
+
+    @media @mobile {
+
+        right: 0;
+        margin: 10px;
+        /* margin: 91px; */
+        margin-top: 148px;
+        max-width: 500px;
+        padding: 23px;
+        padding-bottom: -50px;
+        background-color: white;
+        border-radius: 6px;
+
+    }
+}
+
+
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.field--toggle .option {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: #e5e5e5;
+}
+
+.field--toggle .option:hover {
+    background: #d8d8d8;
+}
+
+.field--toggle .option:hover {
+    background: #ccc;
+}
+
+.option__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.option__label {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.field--toggle .option__label {
+    width: 42px;
+    text-align: center;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }

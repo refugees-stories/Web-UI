@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Refugee Stories</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" media="screen">
+<script src=".//Components/Forms/signup.js" async></script>
+</head>
+
+<body>
+    <!-- Logo and NavBar -->
+    <div class="top-bar">
+        <div class="top-left" onclick="window.location='./index.html'">
+            <img class="logo" src="./assets/Images/Logo.png" />
+            <p class="logo-text">Refugee Stories</p>
+        </div>
+        <nav class="navigation">
+            <a href="./stories.html">Refugee Stories</a>
+            <a href="./signin.html">Submit Story</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contribute.html">Contribute</a>
+            <a href="./signin.html">Sign In</a>
+        </nav>
+    </div>
+
+    <div class="bg-img">
+        <div class="modal">
+            <h2>Ready to do something great?</h2>
+            <h3>Sign Up!</h3>
+            <form>
+                <div class="field">
+                    <label class="field__label" for="name">Name</label>
+                    <input class="field__input" required="required" />
+                </div>
+                <div class="field">
+                    <label class="field__label" for="username">Email</label>
+                    <input class="field__input" id="username" type="email" required="required" />
+                </div>
+                <div class="field field--toggle">
+                    <label class="field__label" for="password">Password</label>
+                    <input class="field__input js-password" id="password" type="password"
+                         autocomplete="off" required="required" />
+                <div class="option">
+                    <input class="option__input js-password-toggle" id="toggle" type="checkbox" /><label class="option__label js-password-label" for="toggle">Show</label>
+                </div>
+                </div>
+                <label class="field__label" for="password">Account Type</label>
+                <select class="select-css">
+                    <option value="Author">Author</option>
+                    <option value="Editor">Editor</option>
+                    <option value="Administrator">Administrator</option>
+                    <option value="Member">Member</option>
+                </select>
+          
+
+
+                <div class="form-actions"><button class="button">SIGN UP</button></div>
+                <p>Already have <a href="./signin.html">account?</a></p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Logo is an empathy symbol from https://empathysymbol.com</p>
+        <p>Stories and pictures from https://www.unhcr.org</p>
+    </footer>
+</body>
+
+</html>

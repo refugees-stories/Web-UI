@@ -184,29 +184,50 @@
     max-width: 100%;
   }
 }
-.bottom-left {
+/*
+.carousel{
+  position: relative;
+  color:white;
+  height:592px;
+  padding-top:70px; //navbar hides behind carousel!!!!!!!!!!!!!!!
+  }
+
+.carousel .carousel-text {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 1px;
+  left: 51px;
 }
+*/
 .about-main {
   width: 1024px;
   height: auto;
+  background-color: lightgrey;
+}
+.about-main h2 {
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 8px;
+  padding-left: 51px;
+  font-family: 'Roboto', sans-serif;
+  color: #132953;
 }
 .about-main .about-students {
-  background-color: lightgrey;
   color: #132953;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: 450px;
+  margin-left: 51px;
+  margin-right: 51px;
 }
 .about-main .about-students .student {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   width: 150px;
-  height: 300px;
+  height: 220px;
+  width: 20%;
 }
 .about-main .about-students .student .text {
   color: white;
@@ -217,10 +238,13 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.about-main .about-students .student h5,
+.about-main p {
+  margin: 0px;
+}
 .about-main .about-students .student .overlay {
   position: absolute;
   border-radius: 15px;
-  margin: 10px;
   height: 150px;
   width: 150px;
   opacity: 0;
@@ -235,7 +259,7 @@
   background-color: #f1f1f1;
   width: 150px;
   height: 150px;
-  margin: 10px;
+  margin: 0px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
@@ -297,6 +321,10 @@ p {
   margin-left: 50px;
   margin-right: 50px;
 }
+.about-main-indiv a,
+.about-main-indiv p {
+  color: #132953;
+}
 .about-main-indiv > img {
   width: 150px;
   height: 150px;
@@ -305,27 +333,46 @@ p {
 .container2 {
   background-color: lightgray;
   padding-bottom: 0px;
+  width: 1024px;
 }
 .box {
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 .box h2 {
   width: 200px;
-  height: 40px;
+  height: 30px;
   margin: 0px;
+  color: #94390f;
+  padding-bottom: 5px;
 }
 .box p {
-  width: 50%;
-  height: 80px;
+  width: 100%;
+  height: 100px;
   margin: 0px;
+  color: #132953;
+}
+.box a {
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 .box > img {
   width: 150px;
   height: 150px;
   border-radius: 15px;
+  margin-bottom: 15px;
+}
+.about-box {
+  padding-left: 25px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 150px;
+  width: 80%;
 }
 .top-bar {
   display: flex;

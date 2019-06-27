@@ -1,3 +1,44 @@
+.hero-image img {
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    top: 0;
+    overflow: hidden;
+
+
+
+    @media @mobile {
+        width: 100%;
+    }
+
+}
+
+.text-on-image {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(19, 41, 83, 0.8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 984px;
+    height: 159px;
+    position: absolute;
+    top: 380px;
+    padding: 20px;
+
+    h2 {
+        font: inherit;
+        font-size: 2rem;
+        margin: 0;
+        color: white;
+        margin-right: 724px;
+        margin-top: 130px;
+
+        @media @mobile {
+            font-size: 1.2rem;
+        }
+    }
+}
+
 .refugee-stories-main {
     width: 1024px;
     height: auto;
@@ -25,13 +66,25 @@
 
             .title-story {
                 margin-left: 30px;
-                line-height: 27px
+                line-height: 27px;
+
+                @media @mobile {
+                    margin-left: 0px;
+                    line-height: 23px;
+                    margin-top: 20px;
+                }
             }
 
             .title {
                 margin-top: 0px;
                 color: @content-title-font;
                 font-size: @story-title-font-size;
+
+                @media @mobile {
+                    margin-top: 0px;
+                    color: #132953;
+                    margin-right: -8px;
+                }
             }
 
             .home-rm-btn {
@@ -49,8 +102,21 @@
                     cursor: pointer;
 
                 }
+
+                @media @mobile {
+                    font-size: 1rem;
+                    width: 100%;
+                }
+            }
+
+            @media @mobile {
+                flex-direction: column;
             }
         }
+    }
+
+    @media @mobile {
+        width: 100%;
     }
 
 }

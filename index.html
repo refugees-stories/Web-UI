@@ -8,21 +8,22 @@
   
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald" media="screen">
   <script src="./Components/Carousel/Carousel.js" async></script>
+  <script src="./index.js" async></script>
 </head>
 
 <body>
   <!-- Logo and NavBar -->
   <div class="top-bar">
-    <div class="top-left">
-      <a href="./index.html"><img class="logo" src="./Assets/Images/Logo.png" /></a>
-      <p class="logo-text">Refugee Stories</p>
-    </div>
+      <div class="top-left" onclick="window.location='./index.html'">
+        <img class="logo" src="./Assets/Images/Logo.png" />
+        <p class="logo-text">Refugee Stories</p>
+      </div>
     <nav class="navigation">
       <a href="./stories.html">Refugee Stories</a>
-      <a href="./submit.html">Submit Story</a>
+      <a href="./signin.html">Submit Story</a>
       <a href="./about.html">About Us</a>
       <a href="./contribute.html">Contribute</a>
-      <a href="./submit.html">Sign In</a>
+      <a href="./signin.html">Sign In</a>
     </nav>
   </div>
   <!-- Image Carousel with Featured Story Snippets, Read More links -->
@@ -39,7 +40,9 @@
       <div class="snippet">
         <h2 class="img-text-headline">South Sudanese Grow Rice, and Community Ties, in Uganda</h2>
         <p class="img-text-p">"Rice is a food crop and a cash crop," explains Minoru Yoshino, chief advisor of the PRiDe project, which has trained more than 50,000 farmers since it launched in 2011. "[Growing it] improves both food security and livelihoods for refugees and Ugandans."</p>
+        <a href="./articles/story1.html">
         <div class="img-readmore-btn">Read More</div>
+      </a>
       </div>
 
       <div class="snippet" style="display: none">
@@ -53,11 +56,14 @@
         <p class="img-text-p">Shadi El Aiek looks over the rooftops of Beirut from his balcony in the Geitawi district. He is one of a growing number of displaced people tutoring language students in Arabic through the NaTakallam website.</p>
         <div class="img-readmore-btn">Read More</div>
     </div>
+    <div class="dots">
+      <div class="circle" style="background-color:#D14704; height: 9px; width: 9px;"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
     </div>
+  </div>
 <!-- This section will be to show which slide is active with highlighted circles/dots -->
-    <!-- <div class="circles">
-      <div class="active"></div>
-    </div> -->
+
     <div class="buttons">
       <div class="left-button">&#10092</div>
       <div class="right-button">&#10093</div>
@@ -74,7 +80,7 @@
         <div class="title-story">
           <span class="title">Yemenis' battle to survive deepens as conflict grinds on</span>
           <p>By Bathoul Ahmed <span class="ver-line">|</span> February 26, 2019 <span class="ver-line">|</span> Aden, Yemen</p>
-          <a href="/stories.html">
+          <a href="./articles/story3.html">
           <button class="home-rm-btn">Read More</button>
           </a>
         </div>
@@ -84,7 +90,7 @@
         <div class="title-story">
           <span class="title">'I stopped by your house in Syria today, but no one was home'</span>
           <p>By Chris Reardon <span class="ver-line">|</span> April 11, 2019 <span class="ver-line">|</span> Syria</p>
-          <a href="/stories.html">
+          <a href="./articles/story3.html">
             <button class="home-rm-btn">Read More</button>
           </a>
         </div>

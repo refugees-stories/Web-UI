@@ -17,9 +17,15 @@ class Carousel {
     previous() {
         const imgs = document.querySelectorAll('.carousel img');
         const snippets = document.querySelectorAll('.snippet');
+        const circles = document.querySelectorAll('.circle');
         //display none on each image
         imgs.forEach(image => image.style.display = 'none');
         snippets.forEach(snip => snip.style.display = 'none');
+        circles.forEach((circle) => {
+            circle.style.backgroundColor = 'white';
+            circle.style.height = '7px';
+            circle.style.width = '7px';
+        })
         //currentIndex minus 1 when clicking left arrow
         this.currentIndex -= 1;
         //if the current index is less than 0 then loop to end
@@ -34,13 +40,23 @@ class Carousel {
         //displays block on the current image on the current index
         this.imgs[this.currentIndex].style.display = 'block';
         snippets[this.currentIndex].style.display = 'block';
+        circles[this.currentIndex].style.backgroundColor = '#D14704';
+        circles[this.currentIndex].style.height = '9px';
+        circles[this.currentIndex].style.width = '9px';
+
     }
     next() {
         const imgs = document.querySelectorAll('.carousel img');
         const snippets = document.querySelectorAll('.snippet');
+        const circles = document.querySelectorAll('.circle');
         //display none for each image
         imgs.forEach(image => image.style.display = 'none');
         snippets.forEach(snip => snip.style.display = 'none');
+        circles.forEach((circle) => {
+            circle.style.backgroundColor = 'white';
+            circle.style.height = '7px';
+            circle.style.width = '7px';
+        })
         //currentindex + 1 when clicking next arrow
         this.currentIndex += 1;
         if (this.currentIndex < 0) {
@@ -51,6 +67,9 @@ class Carousel {
         }
         this.imgs[this.currentIndex].style.display = 'block';
         snippets[this.currentIndex].style.display = 'block';
+        circles[this.currentIndex].style.backgroundColor = '#D14704';
+        circles[this.currentIndex].style.height = '9px';
+        circles[this.currentIndex].style.width = '9px';
     }
 }
 

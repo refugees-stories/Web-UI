@@ -145,6 +145,9 @@
   top: 0px;
   padding: 30px;
 }
+.volunteer-section .opacity-box .text-container {
+  max-width: 800px;
+}
 .volunteer-section .opacity-box h2 {
   font: inherit;
   font-size: 1.65rem;
@@ -162,6 +165,31 @@
   font-size: 0.8rem;
   color: white;
   margin: 10px 0px;
+}
+.volunteer-section .opacity-box .map-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+}
+.volunteer-section .opacity-box .map-container .map {
+  border-radius: 8px;
+  margin: 10px 0px;
+}
+.volunteer-section .opacity-box .map-container .map-link {
+  border: 1px solid #D14704;
+  border-radius: 4px;
+  background-color: white;
+  padding: 8px 0px;
+  width: 250px;
+  color: #D14704;
+  font-size: 0.8rem;
+  margin: 0px;
+}
+.volunteer-section .opacity-box .map-container .map-link:hover {
+  background-color: #D14704;
+  color: white;
+  cursor: pointer;
 }
 .bg-img {
   /* The image used */

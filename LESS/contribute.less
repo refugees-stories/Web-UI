@@ -106,6 +106,9 @@
         position: absolute;
         top: 0px;
         padding: 30px;
+        .text-container {
+            max-width: 800px;
+        }
         h2 {
             font: inherit;
             font-size: 1.65rem;
@@ -124,6 +127,33 @@
             color: white;
             margin: 10px 0px;
         }
+
+        .map-container{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            align-items: center;
+            .map {
+                border-radius: 8px;
+                margin: 10px 0px;
+            }
+            .map-link {
+                border: 1px solid @dark-orange;
+                border-radius: 4px;
+                background-color: white;
+                padding: 8px 0px;
+                width: 250px;
+                color: @dark-orange;
+                font-size: 0.8rem;
+                margin: 0px;
+                &:hover {
+                    background-color: #D14704;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
 
     }
 

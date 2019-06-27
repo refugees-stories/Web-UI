@@ -1,6 +1,9 @@
 .contribute-img {
     width: 1024px;
     height: auto;
+    @media @mobile {
+        max-width: 100%;
+    }
 }
 .contrib-img-text {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(19,41,83,0.7));
@@ -12,9 +15,16 @@
     height: 200px;
     display: flex;
     align-items: flex-end;
+    @media @mobile {
+        top: 354px;
+        max-width: 100%;
+    }
     h1 {
         padding: 25px 30px;
         font-size: 1.8rem;
+        @media @mobile {
+            font-size: 1.3rem;
+        }
     }
 }
 
@@ -22,6 +32,9 @@
     width: 1024px;
     height: auto;
     background-color: #f6f6f7;
+    @media @mobile {
+        max-width: 100%;
+    }
     div {
         padding: 0px 30px;
     }
@@ -40,17 +53,30 @@
         display: flex;
         padding-bottom: 20px;
         justify-content: space-between;
+        @media @mobile {
+            flex-direction: column;
+        }
         .box-containers {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
             padding: 0px 0px 0px 0px;
+            @media @mobile {
+                padding: 10px 0px;
+                border-bottom: 1px solid @light-grey;
+                flex-direction: row;
+                max-width: 100%;
+                justify-content: flex-end;
+            }
         }
         .donation-logo1 {
             padding: 0px 0px;
             width: 100px;
             height: auto;
+            @media @mobile {
+                padding: 0px 30px 0px 0px;
+            }
         }
         .donation-logo2 {
             width: 210px;
@@ -67,15 +93,7 @@
             height: auto;
             padding-bottom: 30px;
         }
-        // .box {
-            // background-color: @light-grey;
-            // height: 112px;
-            // width: 112px;
-            // border: 1px solid grey;
-            // border-radius: 8px;
-            // padding: 0px;
 
-        // }
         .donate-btn {
             border: 1px solid @dark-orange;
             border-radius: 4px;
@@ -85,6 +103,9 @@
             color: @dark-orange;
             font-size: 0.8rem;
             margin: 10px;
+            @media @mobile {
+                margin: 0px 50px 0px 40px;
+            }
             &:hover {
                 background-color: #D14704;
                 color: white;
@@ -108,6 +129,9 @@
         margin: 0px;
         color: white;
     }
+    @media @mobile {
+        max-width: 100%;
+    }
 
     .opacity-box {
         background-image: linear-gradient(to bottom, rgba(19,41,83,0.7), rgba(19,41,83,0.7));
@@ -121,6 +145,10 @@
         position: absolute;
         top: 0px;
         padding: 30px;
+        @media @mobile {
+            max-width: 100%;
+            padding: 0px;
+        }
         .text-container {
             max-width: 800px;
         }

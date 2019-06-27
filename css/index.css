@@ -120,6 +120,11 @@
   width: 1024px;
   height: auto;
 }
+@media (max-width: 500px) {
+  .contribute-img {
+    max-width: 100%;
+  }
+}
 .contrib-img-text {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 41, 83, 0.7));
   font-family: 'Roboto';
@@ -131,14 +136,30 @@
   display: flex;
   align-items: flex-end;
 }
+@media (max-width: 500px) {
+  .contrib-img-text {
+    top: 354px;
+    max-width: 100%;
+  }
+}
 .contrib-img-text h1 {
   padding: 25px 30px;
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .contrib-img-text h1 {
+    font-size: 1.3rem;
+  }
 }
 .donate-section {
   width: 1024px;
   height: auto;
   background-color: #f6f6f7;
+}
+@media (max-width: 500px) {
+  .donate-section {
+    max-width: 100%;
+  }
 }
 .donate-section div {
   padding: 0px 30px;
@@ -158,6 +179,11 @@
   padding-bottom: 20px;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .donate-section .donation-boxes {
+    flex-direction: column;
+  }
+}
 .donate-section .donation-boxes .box-containers {
   display: flex;
   flex-direction: column;
@@ -165,10 +191,24 @@
   justify-content: flex-end;
   padding: 0px 0px 0px 0px;
 }
+@media (max-width: 500px) {
+  .donate-section .donation-boxes .box-containers {
+    padding: 10px 0px;
+    border-bottom: 1px solid #D8D8D8;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: flex-end;
+  }
+}
 .donate-section .donation-boxes .donation-logo1 {
   padding: 0px 0px;
   width: 100px;
   height: auto;
+}
+@media (max-width: 500px) {
+  .donate-section .donation-boxes .donation-logo1 {
+    padding: 0px 30px 0px 0px;
+  }
 }
 .donate-section .donation-boxes .donation-logo2 {
   width: 210px;
@@ -195,6 +235,11 @@
   font-size: 0.8rem;
   margin: 10px;
 }
+@media (max-width: 500px) {
+  .donate-section .donation-boxes .donate-btn {
+    margin: 0px 50px 0px 40px;
+  }
+}
 .donate-section .donation-boxes .donate-btn:hover {
   background-color: #D14704;
   color: white;
@@ -216,6 +261,11 @@
   margin: 0px;
   color: white;
 }
+@media (max-width: 500px) {
+  .volunteer-section {
+    max-width: 100%;
+  }
+}
 .volunteer-section .opacity-box {
   background-image: linear-gradient(to bottom, rgba(19, 41, 83, 0.7), rgba(19, 41, 83, 0.7));
   display: flex;
@@ -226,6 +276,12 @@
   position: absolute;
   top: 0px;
   padding: 30px;
+}
+@media (max-width: 500px) {
+  .volunteer-section .opacity-box {
+    max-width: 100%;
+    padding: 0px;
+  }
 }
 .volunteer-section .opacity-box .text-container {
   max-width: 800px;

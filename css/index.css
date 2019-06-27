@@ -301,6 +301,7 @@ p {
   padding-right: 8%;
 }
 .top-bar {
+  font: inherit;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -314,6 +315,7 @@ p {
 }
 .top-bar .top-left {
   align-items: center;
+  cursor: pointer;
   display: flex;
 }
 .top-bar .top-left .logo {
@@ -323,7 +325,7 @@ p {
 }
 .top-bar .top-left .logo-text {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 500px) {
   .top-bar .top-left {
@@ -339,7 +341,7 @@ p {
 .top-bar .navigation a {
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   Padding: 0px 18px;
   border-left: 1px solid grey;
   vertical-align: baseline;

@@ -8,15 +8,16 @@
   
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Oswald" media="screen">
   <script src="./Components/Carousel/Carousel.js" async></script>
+  <script src="./index.js" async></script>
 </head>
 
 <body>
   <!-- Logo and NavBar -->
   <div class="top-bar">
-    <div class="top-left">
-      <a href="./index.html"><img class="logo" src="./Assets/Images/Logo.png" /></a>
-      <p class="logo-text">Refugee Stories</p>
-    </div>
+      <div class="top-left" onclick="window.location='./index.html'">
+        <img class="logo" src="./Assets/Images/Logo.png" />
+        <p class="logo-text">Refugee Stories</p>
+      </div>
     <nav class="navigation">
       <a href="./stories.html">Refugee Stories</a>
       <a href="./submit.html">Submit Story</a>
@@ -53,11 +54,14 @@
         <p class="img-text-p">Shadi El Aiek looks over the rooftops of Beirut from his balcony in the Geitawi district. He is one of a growing number of displaced people tutoring language students in Arabic through the NaTakallam website.</p>
         <div class="img-readmore-btn">Read More</div>
     </div>
+    <div class="dots">
+      <div class="circle" style="background-color:#D14704; height: 9px; width: 9px;"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
     </div>
+  </div>
 <!-- This section will be to show which slide is active with highlighted circles/dots -->
-    <!-- <div class="circles">
-      <div class="active"></div>
-    </div> -->
+
     <div class="buttons">
       <div class="left-button">&#10092</div>
       <div class="right-button">&#10093</div>

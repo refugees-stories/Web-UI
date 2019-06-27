@@ -643,7 +643,7 @@
 @media (max-width: 500px) {
   .about-main .about-content img {
     width: 500px;
-    height: 800px;
+    height: auto;
   }
 }
 .about-main .about-content {
@@ -1072,7 +1072,7 @@ footer p {
 }
 @media (max-width: 500px) {
   footer p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     padding: 2px 48px;
   }
 }

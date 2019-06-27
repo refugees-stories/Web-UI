@@ -909,6 +909,7 @@ h2 {
 .carousel {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1024px;
   top: 0;
   overflow: hidden;
@@ -919,7 +920,6 @@ h2 {
   height: 54px;
   justify-content: space-between;
   position: absolute;
-  top: 40%;
 }
 @media (max-width: 500px) {
   .carousel .buttons {

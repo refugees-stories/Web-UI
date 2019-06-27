@@ -833,7 +833,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .carousel .buttons {
-    top: 55%;
+    top: 65%;
   }
 }
 .carousel .buttons .left-button,

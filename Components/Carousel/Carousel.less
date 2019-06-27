@@ -5,15 +5,12 @@
 
 .carousel {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 1024px;
     top: 0;
     overflow: hidden;
-
-    // @media(min-width: 1200px){
-    //   width: 1200px;
-    // }
+    
     .buttons {
         display: flex;
         // border: 1px solid red;
@@ -21,9 +18,8 @@
         height: 54px;
         justify-content: space-between;
         position: absolute;
-        // top: 40%;
         @media @mobile {
-            top: 65%;
+            width: 100%;
         }
 
         .left-button,
@@ -51,11 +47,6 @@
 
         .right-button {
             border-radius: 7px 0px 0px 7px;
-        }
-
-        @media @mobile {
-            width: 100%;
-            // top: 87%;
         }
     }
 

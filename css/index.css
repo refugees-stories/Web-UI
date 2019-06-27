@@ -198,17 +198,32 @@
   left: 51px;
 }
 */
+@media (max-width: 500px) {
+  .carousel img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
 .about-main {
   width: 1024px;
   height: auto;
   background-color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 500px) {
+  .about-main {
+    width: 500px;
+  }
 }
 .about-main h2 {
   margin: 0px;
   padding-top: 25px;
   padding-bottom: 8px;
   padding-left: 51px;
-  font-family: 'Roboto', sans-serif;
   color: #132953;
 }
 .about-main .about-students {
@@ -219,6 +234,12 @@
   height: 450px;
   margin-left: 51px;
   margin-right: 51px;
+}
+@media (max-width: 500px) {
+  .about-main .about-students {
+    height: 1000px;
+    flex-direction: column;
+  }
 }
 .about-main .about-students .student {
   display: flex;
@@ -264,10 +285,21 @@
   line-height: 75px;
   font-size: 30px;
 }
+@media (max-width: 500px) {
+  .about-main .about-content img {
+    width: 500px;
+    height: 800px;
+  }
+}
 .about-main .about-content {
   position: relative;
   color: white;
   height: 608px;
+}
+@media (max-width: 500px) {
+  .about-main .about-content {
+    width: 500px;
+  }
 }
 .about-main .about-content .about-content-text {
   position: absolute;
@@ -287,10 +319,21 @@
 .about-main .about-content .about-content-text .half {
   width: 48%;
 }
+@media (max-width: 500px) {
+  .about-main .about-content .about-content-text .half {
+    width: 100%;
+  }
+}
 .about-main .image-holder {
   height: 608px;
   width: auto;
   position: relative;
+}
+@media (max-width: 500px) {
+  .about-main .image-holder {
+    width: 500px;
+    height: 800px;
+  }
 }
 .about-main .image-holder:before {
   content: "";
@@ -303,6 +346,12 @@
   background: rgba(19, 41, 83, 0.5);
   transition: all 0.3s linear;
 }
+@media (max-width: 500px) {
+  .about-main .image-holder:before {
+    width: 500px;
+    height: 800px;
+  }
+}
 footer {
   padding-top: 30px;
 }
@@ -311,8 +360,7 @@ footer p {
   margin-bottom: 0px;
 }
 h3,
-h2,
-p {
+h2 {
   font-family: 'Roboto', sans-serif;
 }
 /* ABOUS US INDIVIDIDUAL PAGES*/
@@ -335,6 +383,11 @@ p {
   padding-bottom: 0px;
   width: 1024px;
 }
+@media (max-width: 500px) {
+  .container2 {
+    width: 500px;
+  }
+}
 .box {
   flex-direction: row;
   display: flex;
@@ -353,6 +406,11 @@ p {
   height: 100px;
   margin: 0px;
   color: #132953;
+}
+@media (max-width: 500px) {
+  .box p {
+    height: 200px;
+  }
 }
 .box a {
   padding-right: 30px;
@@ -373,6 +431,13 @@ p {
   justify-content: flex-start;
   height: 150px;
   width: 80%;
+}
+@media (max-width: 500px) {
+  .about-box {
+    width: 100%;
+    padding-left: 0px;
+    height: 230px;
+  }
 }
 .top-bar {
   display: flex;

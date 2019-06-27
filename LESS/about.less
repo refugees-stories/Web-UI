@@ -12,18 +12,30 @@
   left: 51px;
 }
 */
-
+.carousel img{
+  @media @mobile{
+display: none;
+  }
+}
+.container{
+@media @mobile {
+  width: 500px;
+}
+}
 .about-main{
     width: 1024px;
     height: auto;
     background-color: lightgrey;
+    font-family: 'Roboto', sans-serif;
+    @media @mobile {
+      width:500px;
+    }
 
     h2{
       margin:0px;
       padding-top: 25px;
       padding-bottom: 8px;
       padding-left: 51px;
-      font-family: 'Roboto', sans-serif;
       color:@content-title-font;
     }
     .about-students{
@@ -34,6 +46,10 @@ justify-content: space-around;
 height:450px;
 margin-left: 51px;
 margin-right: 51px;
+@media @mobile{
+  height: 1000px;
+  flex-direction: column;
+}
     }
     .about-students .student{
       display: flex;
@@ -43,6 +59,7 @@ margin-right: 51px;
       width: 150px;
       height: 220px;
      width:20%;
+     
 
       .text{
 
@@ -88,11 +105,20 @@ margin-right: 51px;
         line-height: 75px;
         font-size: 30px;
       }
+      .about-content img{
+        @media @mobile{
+          width: 500px;
+          height:800px;
+        }
+      }
     .about-content{
       //background-color: rgba(19,41,83,0.5)
       position: relative;
       color:white;
       height:608px;
+      @media @mobile{
+        width: 500px;
+      }
     
   
         .about-content-text{
@@ -113,6 +139,9 @@ margin-right: 51px;
         }
         .half{
           width: 48%;
+          @media @mobile{
+            width: 100%;
+          }
         }
 
 }
@@ -120,7 +149,12 @@ margin-right: 51px;
     .image-holder {
       height: 608px;
       width: auto;
-      position:relative; 
+      position:relative;
+      @media @mobile{
+        width: 500px;
+        height:800px;
+
+      }
     }    
     .image-holder:before {
       content: "";
@@ -132,6 +166,11 @@ margin-right: 51px;
       right: 0;
       background: rgba(19,41,83,0.5);
       transition: all .3s linear;
+      @media @mobile{
+        width: 500px;
+        height:800px;
+
+      }
     }
 }
 footer{
@@ -141,7 +180,7 @@ footer p{
   margin-top:0px;
   margin-bottom: 0px;
 }
-h3,h2,p{
+h3,h2{
   font-family: 'Roboto', sans-serif;
 }
 
@@ -166,6 +205,9 @@ border-radius: 15px;
   background-color: lightgray;
   padding-bottom: 0px;
   width:1024px;
+  @media @mobile{
+    width:500px;
+  }
 }
 .box{
   flex-direction: row;
@@ -184,6 +226,9 @@ border-radius: 15px;
     height:100px;
     margin: 0px;
     color:@content-title-font;
+    @media @mobile{
+      height:200px;
+    }
 
   }
   a{
@@ -208,5 +253,11 @@ border-radius: 15px;
   justify-content: flex-start;
   height:150px;
   width:80%;
+  @media @mobile{
+    width:100%;
+    padding-left:0px;
+    height:230px;
+
+  }
 }
 

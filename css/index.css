@@ -566,7 +566,7 @@
 .about-main {
   width: 1024px;
   height: auto;
-  background-color: lightgrey;
+  background-color: #f7f7f8;
   font-family: 'Roboto', sans-serif;
 }
 @media (max-width: 500px) {
@@ -720,7 +720,7 @@ h2 {
 }
 /* ABOUS US INDIVIDIDUAL PAGES*/
 .about-main-indiv {
-  background-color: lightgray;
+  background-color: #f7f7f8;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -734,7 +734,7 @@ h2 {
   border-radius: 15px;
 }
 .container2 {
-  background-color: lightgray;
+  background-color: #f7f7f8;
   padding-bottom: 0px;
   width: 1024px;
 }
@@ -764,7 +764,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .box p {
-    height: 200px;
+    height: 100px;
   }
 }
 .box a {

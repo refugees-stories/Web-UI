@@ -455,44 +455,122 @@
   justify-content: flex-end;
   align-items: center;
 }
-.bottom-left {
+/*
+.carousel{
+  position: relative;
+  color:white;
+  height:592px;
+  padding-top:70px; //navbar hides behind carousel!!!!!!!!!!!!!!!
+  }
+
+.carousel .carousel-text {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 1px;
+  left: 51px;
+}
+*/
+@media (max-width: 500px) {
+  .carousel img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
 }
 .about-main {
   width: 1024px;
   height: auto;
+  background-color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 500px) {
+  .about-main {
+    width: 500px;
+  }
+}
+.about-main h2 {
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 8px;
+  padding-left: 51px;
+  color: #132953;
 }
 .about-main .about-students {
-  background-color: lightgrey;
   color: #132953;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: 450px;
+  margin-left: 51px;
+  margin-right: 51px;
+}
+@media (max-width: 500px) {
+  .about-main .about-students {
+    height: 1000px;
+    flex-direction: column;
+  }
 }
 .about-main .about-students .student {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   width: 150px;
-  height: 300px;
+  height: 220px;
+  width: 20%;
 }
-.about-main .about-students .student a > img {
+.about-main .about-students .student .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.about-main .about-students .student h5,
+.about-main p {
+  margin: 0px;
+}
+.about-main .about-students .student .overlay {
+  position: absolute;
+  border-radius: 15px;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(20, 52, 113, 0.5);
+}
+.about-main .about-students .student:hover .overlay {
+  opacity: 1;
+}
+.about-main .about-students .student img {
   border-radius: 15px;
   background-color: #f1f1f1;
   width: 150px;
   height: 150px;
-  margin: 10px;
+  margin: 0px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+}
+@media (max-width: 500px) {
+  .about-main .about-content img {
+    width: 500px;
+    height: 800px;
+  }
 }
 .about-main .about-content {
   position: relative;
   color: white;
   height: 608px;
+}
+@media (max-width: 500px) {
+  .about-main .about-content {
+    width: 500px;
+  }
 }
 .about-main .about-content .about-content-text {
   position: absolute;
@@ -503,17 +581,30 @@
 .about-main .about-content .about-content-text p {
   font-size: 14px;
   margin-bottom: 15px;
+  margin-top: 5px;
 }
 .about-main .about-content .about-content-text h4 {
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 .about-main .about-content .about-content-text .half {
-  width: 45%;
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .about-main .about-content .about-content-text .half {
+    width: 100%;
+  }
 }
 .about-main .image-holder {
   height: 608px;
   width: auto;
   position: relative;
+}
+@media (max-width: 500px) {
+  .about-main .image-holder {
+    width: 500px;
+    height: 800px;
+  }
 }
 .about-main .image-holder:before {
   content: "";
@@ -526,12 +617,21 @@
   background: rgba(19, 41, 83, 0.5);
   transition: all 0.3s linear;
 }
+@media (max-width: 500px) {
+  .about-main .image-holder:before {
+    width: 500px;
+    height: 800px;
+  }
+}
+footer {
+  padding-top: 30px;
+}
 footer p {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 h3,
-h2,
-p {
+h2 {
   font-family: 'Roboto', sans-serif;
 }
 /* ABOUS US INDIVIDIDUAL PAGES*/
@@ -539,6 +639,10 @@ p {
   background-color: lightgray;
   margin-left: 50px;
   margin-right: 50px;
+}
+.about-main-indiv a,
+.about-main-indiv p {
+  color: #132953;
 }
 .about-main-indiv > img {
   width: 150px;
@@ -548,28 +652,63 @@ p {
 .container2 {
   background-color: lightgray;
   padding-bottom: 0px;
+  width: 1024px;
+}
+@media (max-width: 500px) {
+  .container2 {
+    width: 500px;
+  }
 }
 .box {
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 .box h2 {
   width: 200px;
-  height: 40px;
+  height: 30px;
   margin: 0px;
+  color: #94390f;
+  padding-bottom: 5px;
 }
 .box p {
-  width: 50%;
-  height: 80px;
+  width: 100%;
+  height: 100px;
   margin: 0px;
+  color: #132953;
+}
+@media (max-width: 500px) {
+  .box p {
+    height: 200px;
+  }
+}
+.box a {
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 .box > img {
   width: 150px;
   height: 150px;
   border-radius: 15px;
-  padding-right: 8%;
+  margin-bottom: 15px;
+}
+.about-box {
+  padding-left: 25px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 150px;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .about-box {
+    width: 100%;
+    padding-left: 0px;
+    height: 230px;
+  }
 }
 .article {
   padding-left: 487px;

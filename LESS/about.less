@@ -23,9 +23,34 @@ justify-content: space-around;
       flex-direction: row;
       width: 150px;
       height: 300px;
+      .text{
+
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+      }
       
+
     }
-    .about-students .student a >img{
+   .about-students .student .overlay{
+      position: absolute;
+      border-radius: 15px;
+      margin: 10px;
+      height: 150px;
+      width: 150px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(20,52,113,0.5);
+
+    }
+    .about-students .student:hover .overlay{
+      opacity: 1;
+    }
+    .about-students .student img{
       
         border-radius: 15px;
         background-color: #f1f1f1;
@@ -51,14 +76,16 @@ justify-content: space-around;
           p{
           font-size: 14px;
           margin-bottom: 15px;
+          margin-top:5px;
 
         }
         h4{
           margin-bottom: 0px;
+          margin-top: 0px;
 
         }
         .half{
-          width: 45%;
+          width: 48%;
         }
 
 }
@@ -80,9 +107,12 @@ justify-content: space-around;
       transition: all .3s linear;
     }
 }
-
+footer{
+  padding-top:30px;
+}
 footer p{
   margin-top:0px;
+  margin-bottom: 0px;
 }
 h3,h2,p{
   font-family: 'Roboto', sans-serif;
@@ -123,9 +153,8 @@ border-radius: 15px;
   }
 }
 .box > img{
-
+  
   width: 150px;
   height: 150px;
   border-radius: 15px;
-  padding-right: 8%;
 }

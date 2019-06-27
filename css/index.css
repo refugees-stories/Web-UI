@@ -208,7 +208,29 @@
   width: 150px;
   height: 300px;
 }
-.about-main .about-students .student a > img {
+.about-main .about-students .student .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.about-main .about-students .student .overlay {
+  position: absolute;
+  border-radius: 15px;
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(20, 52, 113, 0.5);
+}
+.about-main .about-students .student:hover .overlay {
+  opacity: 1;
+}
+.about-main .about-students .student img {
   border-radius: 15px;
   background-color: #f1f1f1;
   width: 150px;
@@ -232,12 +254,14 @@
 .about-main .about-content .about-content-text p {
   font-size: 14px;
   margin-bottom: 15px;
+  margin-top: 5px;
 }
 .about-main .about-content .about-content-text h4 {
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 .about-main .about-content .about-content-text .half {
-  width: 45%;
+  width: 48%;
 }
 .about-main .image-holder {
   height: 608px;
@@ -255,8 +279,12 @@
   background: rgba(19, 41, 83, 0.5);
   transition: all 0.3s linear;
 }
+footer {
+  padding-top: 30px;
+}
 footer p {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 h3,
 h2,
@@ -298,7 +326,6 @@ p {
   width: 150px;
   height: 150px;
   border-radius: 15px;
-  padding-right: 8%;
 }
 .top-bar {
   display: flex;

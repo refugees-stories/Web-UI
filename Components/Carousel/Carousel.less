@@ -10,7 +10,7 @@
     width: 1024px;
     top: 0;
     overflow: hidden;
-    
+
     .buttons {
         display: flex;
         // border: 1px solid red;
@@ -18,6 +18,7 @@
         height: 54px;
         justify-content: space-between;
         position: absolute;
+
         @media @mobile {
             width: 100%;
         }
@@ -28,17 +29,12 @@
             padding-bottom: 4px;
             color: white;
             background-color: @nav-background;
-            opacity: 0.5;
+            // opacity: 0.5;
             font-size: 40px;
             position: relative;
             width: 30px;
             height: 50px;
             cursor: pointer;
-
-            &:hover {
-                color: grey;
-                border: 2px solid grey;
-            }
         }
 
         .left-button {
@@ -64,11 +60,12 @@
         padding: 20px;
 
         @media @mobile {
+            background: transparent;
             align-items: center;
             justify-content: flex-start;
             width: 100%;
             position: absolute;
-            top: 405px;
+            top: 298px;
             padding: 0px;
             // margin-top: -107px;
             // padding-top: 34px;
@@ -79,7 +76,7 @@
 
         h2 {
             font: inherit;
-            font-size: 1.65rem;
+            font-size: 2rem;
             margin: 0;
             color: white;
 
@@ -91,7 +88,7 @@
 
         p {
             font: inherit;
-            font-size: 0.9rem;
+            font-size: 1.3125rem;
             color: white;
             margin: 10px 0px;
 
@@ -104,7 +101,7 @@
             border: 1px solid @dark-orange;
             border-radius: 4px;
             font: inherit;
-            font-size: 0.9rem;
+            font-size: 1.0625rem;
             color: @dark-orange;
             background-color: white;
             padding: 10px 10px;
@@ -132,6 +129,7 @@
             width: 100px;
             display: flex;
             justify-content: space-around;
+
             @media @mobile {
                 margin-bottom: 10px;
             }
@@ -154,7 +152,11 @@
 
             @media @mobile {
                 margin-top: 54px;
-                width: 100%;
+                /* width: 100%; */
+                margin-left: 29px;
+                /* flex-wrap: wrap; */
+                /* display: flex; */
+                margin-right: 4px;
             }
         }
 

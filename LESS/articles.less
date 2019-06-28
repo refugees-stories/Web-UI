@@ -1,3 +1,13 @@
+.story-image {
+
+    img {
+        @media @mobile {
+            width: 100%;
+        }
+    }
+
+}
+
 .article {
     padding-left: 487px;
     padding-right: 485px;
@@ -6,6 +16,14 @@
 
     .meta {
         font-weight: 700;
+    }
+
+    @media @mobile {
+        line-height: 23px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -21,14 +39,30 @@
     top: 401px;
     padding: 20px;
     color: white;
+
+    @media @mobile {
+        background: transparent;
+        width: 100%;
+        top: 319px;
+        padding: 0px;
+    }
 }
 
 .img-text-sub {
     font-size: 1.3rem;
+
+    @media @mobile {
+        display: none;
+    }
 }
 
 .img-text-title {
     font-size: 1.9rem;
+
+    @media @mobile {
+        margin-left: -22px;
+        flex-wrap: wrap;
+    }
 }
 
 .article-title {

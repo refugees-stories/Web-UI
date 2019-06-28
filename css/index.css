@@ -718,7 +718,7 @@
 }
 .about-main .about-content .about-content-text p {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   margin-top: 5px;
 }
 .about-main .about-content .about-content-text h4 {
@@ -731,6 +731,11 @@
 @media (max-width: 500px) {
   .about-main .about-content .about-content-text .half {
     width: 100%;
+  }
+}
+@media mobile {
+  .about-main .about-content .about-content-text {
+    margin-left: 147px;
   }
 }
 .about-main .image-holder {
@@ -818,7 +823,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .box p {
-    height: 100px;
+    height: 125px;
   }
 }
 .box a {
@@ -845,7 +850,7 @@ h2 {
   .about-box {
     width: 100%;
     padding-left: 0px;
-    height: 230px;
+    height: 354px;
   }
 }
 @media (max-width: 500px) {

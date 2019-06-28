@@ -24,6 +24,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -40,13 +41,15 @@ body {
     .home-stories {
         width: 1024px;
         height: auto;
-        background-color: #f6f6f7;
+        background-color: #F7F7F8;
 
         .recent-title {
             margin-left: 40px;
             margin-top: 30px;
-            font-size: 1.8rem;
+            font-size: 1.75rem;
             color: @content-font;
+            font-weight: 300;
+            line-height: 33px;
         }
 
         .recent-stories {
@@ -66,12 +69,17 @@ body {
                         color: #b4c1da;
                         vertical-align: middle;
                         padding: 3px;
+
                     }
 
                     @media @mobile {
                         margin-left: 0px;
                         line-height: 23px;
                         margin-top: 20px;
+                    }
+
+                    a {
+                        text-decoration: none;
                     }
                 }
 
@@ -89,12 +97,16 @@ body {
                 }
 
                 .home-rm-btn {
-                    border: 1px solid red;
+                    border: 1px solid @dark-orange;
                     border-radius: 4px;
+                    font: inherit;
+                    font-size: 1.125rem;
+                    color: @dark-orange;
                     background-color: white;
-                    padding: 10px;
-                    color: red;
-                    font-size: 1.1rem;
+                    margin: 0;
+                    height: 42px;
+                    width: 110px;
+                    .flex(center);
 
 
                     &:hover {
@@ -121,6 +133,10 @@ body {
                     @media @mobile {
                         height: 238px;
                     }
+                }
+
+                p {
+                    color: #132953;
                 }
             }
         }
